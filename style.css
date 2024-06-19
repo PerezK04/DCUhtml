@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #5497a7;
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 200px;
+    overflow: hidden;
+}
+header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el header */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5; /* Hace que la imagen sea opaca */
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+}
+header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen y la superposición */
+}
+.image-container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.image-container figure{
+    margin: 0;
+}
+.image-container img{
+    width: 100%;
+    max-width: 250px;
+    height: 400px;
+}
+.center-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.center-image img {
+    max-width: 100%;
+    height: auto;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.6;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    min-height: 100vh;
+}
+main{
+    max-width: 2000px;
+    
+}
+nav{
+    background-color: #a1d2ce;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-weight: bold ;
+}
+nav ol{
+    background-color: #ffffff;
+    list-style-type: decimal;
+    padding-left: 60px;
+}
+.tabla-etapas{
+    width: 90%;
+    margin: 2% auto;
+    border-collapse: collapse;
+}
+.tabla-etapas th, .tabla-etapas td{
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.tapas-etapas th{
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}
+nav ol li{
+    margin-bottom: 10px;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+    
+}
+li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+li a:hover::after{
+    width: 100%;
+}
+footer{
+    background-color: #5497a7;
+    padding: 10px;
+    text-align: center;
+    
+    
+    
+}
+footer b{
+    font-weight: normal;
+    color: #333;
+    font-size: 16px;
+}
